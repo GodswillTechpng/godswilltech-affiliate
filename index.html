@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Learn digital skills and discover digital products with GodswillTech — affiliate marketing, AI video creation, video editing and web development.">
+  <title>GodswillTech | Digital Skills & Resources</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="GodswillTech home">
+        <span class="brand-mark">GT</span>
+        <span><strong>GodswillTech</strong><small>Learn • Build • Grow</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#learn">Learn</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> Practical digital skills for beginners</span>
+          <h1>Learn digital skills.<br><span>Build your future.</span></h1>
+          <p class="hero-text">Explore affiliate marketing, AI video creation, CapCut editing and web development with practical learning resources from GodswillTech.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Explore products <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#learn">Start learning</a>
+          </div>
+          <p class="hero-note">Learn at your pace. Choose skills that fit your goals.</p>
+        </div>
+        <div class="hero-card" aria-label="GodswillTech learning topics">
+          <div class="hero-card-top"><span class="mini-logo">GT</span><span class="live-label">YOUR DIGITAL SKILLS HUB</span></div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="core-icon" aria-hidden="true">✦</div>
+          <div class="topic-chip chip-one"><span>↗</span> Affiliate marketing</div>
+          <div class="topic-chip chip-two"><span>▶</span> AI video creation</div>
+          <div class="topic-chip chip-three"><span>{ }</span> Web development</div>
+          <div class="topic-chip chip-four"><span>▣</span> Video editing</div>
+          <div class="hero-card-bottom"><span>LEARN SOMETHING USEFUL TODAY</span><span>01 / 04</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Website features">
+      <div class="container trust-items"><span>✓ Beginner-friendly resources</span><span>✓ Mobile-friendly design</span><span>✓ Curated digital products</span></div>
+    </section>
+
+    <section class="section" id="learn">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">BUILD YOUR SKILLS</span><h2>What do you want to learn?</h2></div>
+          <p>Choose a learning path and take your next step with practical digital skills.</p>
+        </div>
+        <div class="learning-grid">
+          <article class="learning-card">
+            <div class="category-icon purple">↗</div><span class="card-kicker">GROW ONLINE</span>
+            <h3>Affiliate Marketing</h3><p>Understand how affiliate links, commissions, product selection and audience trust work.</p>
+            <a href="#products" class="text-link" data-category-link="affiliate">Explore resources <span>→</span></a>
+          </article>
+          <article class="learning-card">
+            <div class="category-icon blue">▶</div><span class="card-kicker">CREATE STORIES</span>
+            <h3>AI Video Creation</h3><p>Learn the basics of planning ideas, creating scenes and building engaging videos with AI tools.</p>
+            <a href="#products" class="text-link" data-category-link="ai-video">Explore resources <span>→</span></a>
+          </article>
+          <article class="learning-card">
+            <div class="category-icon orange">✂</div><span class="card-kicker">EDIT WITH PURPOSE</span>
+            <h3>CapCut & Video Editing</h3><p>Explore editing workflows, captions, transitions, sound and storytelling techniques.</p>
+            <a href="#products" class="text-link" data-category-link="editing">Explore resources <span>→</span></a>
+          </article>
+          <article class="learning-card">
+            <div class="category-icon green">{ }</div><span class="card-kicker">BUILD FOR THE WEB</span>
+            <h3>Web Development</h3><p>Start learning HTML, CSS and JavaScript while building useful projects of your own.</p>
+            <a href="#products" class="text-link" data-category-link="web-development">Explore resources <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">THE RESOURCE STORE</span><h2>Digital products & learning guides</h2></div>
+          <p>Browse resources and follow the product link for details. Check the seller's offer before purchasing.</p>
+        </div>
+        <div class="product-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="Search products..." aria-label="Search products"></label>
+          <label class="filter-label" for="categoryFilter">Category</label>
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <option value="affiliate">Affiliate marketing</option>
+            <option value="ai-video">AI video creation</option>
+            <option value="editing">CapCut & editing</option>
+            <option value="web-development">Web development</option>
+            <option value="other">Other digital skills</option>
+          </select>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <!-- Product cards are rendered by script.js from the PRODUCTS list. -->
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No products match your search. Try another word or category.</p>
+        <div class="store-note"><span class="note-icon">i</span><p><strong>Before you buy:</strong> Product descriptions, prices and availability should be confirmed on the seller's page. Some links may be affiliate links, meaning GodswillTech may earn a commission at no extra cost to you.</p></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-art"><div class="about-big-mark">GT</div><span class="about-caption">PRACTICAL TECH. REAL LEARNING.</span></div>
+        <div class="about-copy"><span class="eyebrow">ABOUT GODSWILLTECH</span><h2>Technology feels easier when you learn it step by step.</h2><p>GodswillTech shares accessible digital-skills education and curated resources for people who want to explore technology, create content and build useful online skills.</p><p>Our focus is learning and practical progress—not promises of instant income. Results from affiliate marketing and digital skills vary with effort, experience, audience and market conditions.</p><a class="text-link" href="#contact">Connect with GodswillTech <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div><span class="eyebrow">LET'S CONNECT</span><h2>Have a question?</h2><p>Contact GodswillTech for product questions, learning resources or collaboration enquiries.</p></div>
+        <div class="contact-actions"><a class="button button-primary" id="whatsappLink" href="https://wa.me/2340000000000" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a><a class="button button-secondary" href="https://selar.com/m/Affiliatemarketingacademic11" target="_blank" rel="noopener noreferrer">Visit Selar store ↗</a><small>Update the WhatsApp number in <code>script.js</code> before publishing.</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">GT</span><span><strong>GodswillTech</strong><small>Learn • Build • Grow</small></span></a><p>Practical digital skills for a connected world.</p><div class="footer-links"><a href="#learn">Learn</a><a href="#products">Products</a><a href="#contact">Contact</a></div></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> GodswillTech. All rights reserved.</span><span>Affiliate disclosure: qualifying purchases may earn us a commission.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
